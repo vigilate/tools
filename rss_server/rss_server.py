@@ -14,7 +14,7 @@ for key in NS:
     etree.register_namespace(key, NS[key])
 
 def add_samples(rss_root):
-    entries = glob.glob("entries_rss/*.xml")
+    entries = glob.glob("enabled_entries_rss/*.xml")
     for entry_file in entries:
         new_tree = etree.parse(entry_file)
         new_root = new_tree.getroot()
@@ -31,7 +31,7 @@ def index():
     return open("new-rss.xml", "r").read()
 
 
-if not os.path.isdir("entries_rss"):
+if not os.path.isdir("enabled_entries_rss"):
     os.mkdir("entries_rss")
 os.system("wget https://nvd.nist.gov/download/nvd-rss.xml")
     
