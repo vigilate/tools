@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <item rdf:about="http://web.nvd.nist.gov/view/vuln/detail?vulnId=">
+    <title>CVE-2016-TEST-SAFARI3</title>
+    <link>http://web.nvd.nist.gov/view/vuln/detail?vulnId=</link>
+    <description>Test description</description>
+    <dc:date>2017-01-01T00:00:00Z</dc:date>
+  </item>
+</rdf:RDF>

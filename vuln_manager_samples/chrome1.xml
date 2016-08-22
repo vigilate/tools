@@ -1,17 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <nvd xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1" xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2" xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:patch="http://scap.nist.gov/schema/patch/0.1" xmlns="http://scap.nist.gov/schema/feed/vulnerability/2.0" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" nvd_xml_version="2.0" pub_date="2016-07-06T12:00:00" xsi:schemaLocation="http://scap.nist.gov/schema/patch/0.1 http://nvd.nist.gov/schema/patch_0.1.xsd http://scap.nist.gov/schema/feed/vulnerability/2.0 http://nvd.nist.gov/schema/nvd-cve-feed_2.0.xsd http://scap.nist.gov/schema/scap-core/0.1 http://nvd.nist.gov/schema/scap-core_0.1.xsd">
-<entry id="CVE-2016-TEST-EXCEl">
+<entry id="CVE-2016-TEST-CHROME1">
   <vuln:vulnerable-configuration id="http://nvd.nist.gov/">
     <cpe-lang:logical-test operator="OR" negate="false">
-      <cpe-lang:fact-ref name="cpe:/a:test:excel:2016"/>
-      <cpe-lang:fact-ref name="cpe:/a:test:excel:2017"/>
+      <cpe-lang:fact-ref name="cpe:/a:test:test_chrome:1.0"/>
     </cpe-lang:logical-test>
   </vuln:vulnerable-configuration>
   <vuln:vulnerable-software-list>
-    <vuln:product>cpe:/a:test:excel:2016</vuln:product>
-    <vuln:product>cpe:/a:test:excel:2017</vuln:product>
+    <vuln:product>cpe:/a:test:test_chrome:1.0</vuln:product>
   </vuln:vulnerable-software-list>
-  <vuln:cve-id>CVE-2016-TEST-EXCEL</vuln:cve-id>
+  <vuln:cve-id>CVE-2016-TEST-CHROME1</vuln:cve-id>
   <vuln:published-datetime>2016-07-18T16:00:01.370-04:00</vuln:published-datetime>
   <vuln:last-modified-datetime>2016-07-18T16:00:01.370-04:00</vuln:last-modified-datetime>
   <vuln:cvss>
