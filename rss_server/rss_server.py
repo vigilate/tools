@@ -31,7 +31,7 @@ def index():
     return open("new-rss.xml", "r").read()
 
 
-if not os.path.isdir("enabled_entries_rss"):
+if not os.path.isdir("entries_rss"):
     os.mkdir("entries_rss")
 os.system("wget https://nvd.nist.gov/download/nvd-rss.xml")
     
