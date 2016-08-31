@@ -7,9 +7,10 @@ import requests
 
 from dateutil.parser import parse as parse_date
 
-PATH_BACKEND = "/home/ubuntu/backend/"
+PATH_BACKEND = "/home/exploit/backend/"
 
-f = feedparser.parse('http://nvd.nist.gov/download/nvd-rss.xml')
+#f = feedparser.parse('http://nvd.nist.gov/download/nvd-rss.xml')
+f = feedparser.parse('http://127.0.0.1:8080/download/nvd-rss.xml')
 
 def get_value_meta(meta_content, key):
     for line in meta_content.split("\n"):
@@ -43,9 +44,13 @@ def check():
     dates.sort()
 
     if check_uptodate(dates[-1]):
+        print("updating")
         do_update()
+    else:
+        print("no update", dates[-1])
 
 if __name__ == "__main__":
     while True:
+        print("checking")
         check()
         time.sleep(5)
