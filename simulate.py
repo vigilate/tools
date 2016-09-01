@@ -13,9 +13,16 @@ rss_server_src = 'rss_server/entries_rss/%s.xml'
 rss_server_dst = 'rss_server/enabled_entries_rss/%s.xml'
 
 def simulate(test_name):
-    os.makedirs('/'.join(vuln_manager_dst.split('/')[:-1]), True)
+
+    path = '/'.join(vuln_manager_dst.split('/')[:-1])
+
+    if not os.path.isdir(path):
+        os.makedirs(path, True)
     shutil.copy(vuln_manager_src % (test_name), vuln_manager_dst)
-    os.makedirs('/'.join(rss_server_dst.split('/')[:-1]), True)
+
+    path = '/'.join(rss_server_dst.split('/')[:-1])
+    if not os.path.isdir(path):
+        os.makedirs(path, True)
     shutil.copy(rss_server_src % (test_name), rss_server_dst % (test_name))
 
 if __name__ == "__main__":
